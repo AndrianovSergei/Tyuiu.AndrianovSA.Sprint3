@@ -1,16 +1,16 @@
-﻿namespace Tyuiu.AndrianovSA.Sprint3.Task0.V9.Lib
+﻿using tyuiu.cources.programming.interfaces.Sprint3;
+
+namespace Tyuiu.AndrianovSA.Sprint3.Task0.V9.Lib
 {
-    public class DataService
+    public class DataService : ISprint3Task0V9
     {
-        public double GetSumSeries(double x)
+        public double GetSumSeries(double value, int startValue, int stopValue)
         {
             double sumSeries = 0;
-            int startValue = 1;
-            int stopValue = 15;
 
             for (int i = startValue; i <= stopValue; i++)
             {
-                sumSeries += Math.Pow((1.0 / (3.0 + Math.Pow(x, i))), i);
+                sumSeries += Math.Pow((1.0 / (3.0 + Math.Pow(value, i))), i);
             }
 
             return Math.Round(sumSeries, 3);
