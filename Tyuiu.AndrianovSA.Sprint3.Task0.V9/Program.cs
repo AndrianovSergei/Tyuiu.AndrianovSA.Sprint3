@@ -24,13 +24,18 @@ namespace Tyuiu.AndrianovSA.Sprint3.Task0.V9
             Console.WriteLine("***************************************************************************");
 
             double x = 0.5;
+            int startValue = 1;
+            int stopValue = 15;
+
             Console.WriteLine("Переменная X = " + x);
+            Console.WriteLine("Старт шага = " + startValue);
+            Console.WriteLine("Конец шага = " + stopValue);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            double res = ds.GetSumSeries(x);
+            double res = ds.GetSumSeries(x, startValue, stopValue);
 
             Console.WriteLine("Сумма ряда равна = " + res);
 

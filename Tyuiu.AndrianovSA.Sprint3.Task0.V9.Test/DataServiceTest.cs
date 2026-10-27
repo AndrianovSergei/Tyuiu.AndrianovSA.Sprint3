@@ -11,9 +11,10 @@ namespace Tyuiu.AndrianovSA.Sprint3.Task0.V9.Test
             DataService ds = new DataService();
 
             double x = 0.5;
-            double res = ds.GetSumSeries(x);
+            int startValue = 1;
+            int stopValue = 15;
 
-            // Ожидаемый результат для x = 0,5 при i от 1 до 15
+            double res = ds.GetSumSeries(x, startValue, stopValue);
             double wait = 0.415;
 
             Assert.AreEqual(wait, res);
